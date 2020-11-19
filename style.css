@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(255, 162, 74);
+    margin: 0;
+    text-align: center;
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+}
+img{
+    width: 30vw;
+    box-shadow: 0 0 13vh 2vh rgb(119, 70, 24);
+}
+h1{
+    font-size: 14vh;
+    font-family: monospace;
+}
