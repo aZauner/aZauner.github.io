@@ -17,3 +17,11 @@ h1{
     font-size: 14vh;
     font-family: monospace;
 }
+a{
+    display: inline-block;
+    font-size: 8vh;
+    font-family: monospace;
+    margin-top: 5vh;
+    text-decoration: none;
+    color: black;
+}
