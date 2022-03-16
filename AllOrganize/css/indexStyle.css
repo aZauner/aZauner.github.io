@@ -1,0 +1,161 @@
+body{
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    font-family: 'Input';
+}
+
+@font-face {
+    font-family: 'Input';
+    src: url('../font/InputSansCondensed-ExtraLight.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+a:focus{
+    outline: none;
+}
+
+nav{
+    height: 100vh;
+    width: 23vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(114, 114, 114);
+    flex-direction: column;
+    padding: 0 1.8vh 0 1.8vh;
+    user-select: none;
+}
+
+nav > div{
+    height: 40vh;
+    width: fit-content;
+    font-size: 2.8vh;
+    margin: 0;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+nav > div > div{
+    width: fit-content;
+    height: 5vh;
+    justify-content: flex-start;
+}
+
+nav div a{
+    text-decoration: none;
+    color: white;
+}
+
+#homeLink{
+    justify-content: center;
+    height: 15vh;
+    width: fit-content;
+    padding: 3vh 0 0 0;
+}
+
+#homeLink a{
+    box-sizing: border-box;
+    border-width: 0;
+    border-radius: 0.7vh;
+    border-style: solid;
+    background-color: rgb(255, 111, 111);
+    padding: 1.3vh;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+#homeLink a:hover{
+    text-decoration: none;
+    transform: scale(1.1);
+}
+
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+#headlineName{
+    color: rgb(255, 81, 81);
+}
+
+#indexWrapper{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+main{
+    user-select: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 auto 0 auto;
+}
+
+#indexHeadline{
+    font-size: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#indexHeadline div{
+    width: 100%;
+    padding: 1vh 0 1vh 0;
+}
+
+#indexHeadline div h1{
+    margin: 0;
+    text-align: center;
+}
+
+#indexLoginField{
+    padding: 7vh 0 0 0;
+    height: 12vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#indexLoginBtn{
+    width: fit-content;
+    font-size: 3.5vh;
+    text-decoration: none;
+    box-sizing: border-box;
+    border-width: 0;
+    border-radius: 0.7vh;
+    border-style: solid;
+    background-color: rgb(255, 111, 111);
+    padding: 1.8vh;
+    color: black;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+#indexLoginBtn:hover{
+    text-decoration: none;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#indexRegBtn{
+    margin-top: 1vh;
+    font-size: 2.4vh;
+    text-decoration: none;
+    padding: 1.8vh;
+    color: black;
+    font-weight: bold;
+}
+
+#indexRegBtn:hover{
+    text-decoration: underline;
+}

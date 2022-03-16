@@ -1,0 +1,343 @@
+body{
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    font-family: 'Input';
+}
+
+@font-face {
+    font-family: 'Input';
+    src: url('../font/InputSansCondensed-ExtraLight.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+a:focus{
+    outline: none;
+}
+
+nav{
+    height: 100vh;
+    width: 23vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(114, 114, 114);
+    flex-direction: column;
+    padding: 0 1.8vh 0 1.8vh;
+    user-select: none;
+    z-index: 1;
+}
+
+nav > div{
+    height: 40vh;
+    width: fit-content;
+    font-size: 2.8vh;
+    margin: 0;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+nav > div > div{
+    width: fit-content;
+    height: 5vh;
+    justify-content: flex-start;
+}
+
+nav div a{
+    text-decoration: none;
+    color: white;
+}
+
+#homeLink{
+    justify-content: center;
+    height: 15vh;
+    width: fit-content;
+    padding: 3vh 0 0 0;
+}
+
+#homeLink a{
+    box-sizing: border-box;
+    border-width: 0;
+    border-radius: 0.7vh;
+    border-style: solid;
+    background-color: rgb(255, 111, 111);
+    padding: 1.3vh;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+#homeLink a:hover{
+    text-decoration: none;
+    transform: scale(1.1);
+}
+nav a:hover{
+    text-decoration: underline;
+}
+
+#indexWrapper{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+main{
+    user-select: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;   
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 auto 0 auto;
+    z-index: 1;
+    background-color: white;
+}
+
+#active{
+    color: rgb(255, 126, 126);
+}
+
+#active:hover{
+    text-decoration: none;
+}
+
+#projectsHeader{
+    height: 10vh;
+    width: 100%;
+}
+
+#projectsHeader h1{
+    font-size: 6vh;
+    margin: 0;
+    padding: 3vh 0 0 5vh;
+}
+
+#projectsMain{
+    height: 77vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-y: scroll;
+    margin: 3vh 0 3vh 0;
+}
+
+#projectsFooter{
+    height: 7vh;
+    width: 96%;
+    padding: 0 2% 0 2%;
+}
+
+.project{
+    width: 80%;
+    height: fit-content;
+    padding: 3vh;
+    box-sizing: border-box;
+    border-width: 0;
+    border-radius: 1vh;
+    border-style: solid;
+    background-color:  rgb(230, 230, 230);
+    display: flex;
+    flex-direction: column;
+    margin: 2vh 0 5vh 0;
+    box-shadow: 2vh 2vh 4vh 0 rgb(209, 209, 209);
+}
+
+.projectHead{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.projectName{
+    width: fit-content;
+    padding-right: 10vw;
+}
+
+.projectDate{
+    width: fit-content;
+    padding-right: 2vw;
+}
+
+.projectKunden{
+    width: fit-content;
+}
+
+.projectBtn,
+.taskDel,
+.taskCheck,
+.projectsBtn{
+    width: 5.5vh;
+    height: 5.5vh;
+    padding: 1.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0 solid black;
+    border-radius: 100vh;
+    background-color: rgb(255, 89, 89);
+}
+
+.taskDel{
+    background-color: rgb(255, 74, 74);
+}
+
+.taskCheck{
+    background-color: rgb(91, 255, 73);
+}
+
+.projectBtn:hover,
+.taskDel:hover,
+.taskCheck:hover,
+.projectsBtn:hover{
+    cursor: pointer;
+}
+
+.projectTask{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.taskDescr{
+    width: 60%;
+}
+
+#valuesTable{
+    width: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: -1;
+    border: 0 solid black;
+    border-radius: 1vh;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    margin: 50vh 0 0 50vw;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 15vh 1vh rgb(172, 172, 172);
+}
+
+#valuesTable h1{
+    width: fit-content;
+}
+
+#projInput{
+    display: flex;
+    padding: 1vh;
+    height: 27vh;
+    width: 80%;
+}
+
+
+#projLabels{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 40%;
+    padding: 2vh;
+}
+
+#projLabels h2{
+    font-size: 3.5vh;
+    width: 100%;
+    text-align: right;
+    margin: 0;
+}
+
+#projInputs{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 100%;
+    padding: 2vh;
+}
+
+#projInputs input{
+    width: 100%;
+    height: 5vh;
+    font-size: 3vh;
+    box-sizing: border-box;
+    border-radius: 0.7vh;
+    border-color: rgb(255, 85, 85);
+    border-style: solid;
+    border-width: 0.3vh;
+    padding: 1vh;
+}
+
+#projAdd{
+    display: block;
+    margin: auto auto;
+    width: fit-content;
+    font-size: 2.5vh;
+    text-decoration: none;
+    box-sizing: border-box;
+    border-width: 0;
+    border-radius: 0.7vh;
+    border-style: solid;
+    background-color: rgb(255, 85, 85);
+    padding: 1.8vh;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+#projAdd:hover{
+    text-decoration: none;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#valuesTable h1{
+    text-align: center;
+    font-size: 6vh;
+}
+
+#projCancel{
+    display: block;
+    margin: auto auto;
+    width: fit-content;
+    margin-top: 1vh;
+    font-size: 2vh;
+    text-decoration: none;
+    padding: 1.8vh;
+    color: black;
+    font-weight: bold;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+
+#projCancel:hover{
+    text-decoration: underline;
+    background-color: none;
+    cursor: pointer;
+    transform: scale(1);
+}
+
+button{
+    transition: all 0.15s ease-in-out;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+#errorDiv{
+    width: fit-content;
+    height: fit-content;
+    color: red;
+    font-size: 2.2vh;
+}
+
+#errorDiv p{
+    margin: 0 0 0.5vh 0;
+}
